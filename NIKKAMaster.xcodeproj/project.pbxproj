@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BD7DCF785B985F983255F6D8 /* Pods_NIKKAMaster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5155D45344ACB084FEAE1C16 /* Pods_NIKKAMaster.framework */; };
+		DA2BA7BA1E87C4D600262658 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA2BA7B91E87C4D600262658 /* Main.storyboard */; };
+		DA867BC01ED810F200D89E6D /* NKAPPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DA867BBF1ED810F200D89E6D /* NKAPPManager.m */; };
+		DA867BE41ED82B9000D89E6D /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA867BC51ED82B9000D89E6D /* Info.swift */; };
+		DA867BE51ED82B9000D89E6D /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA867BC61ED82B9000D89E6D /* Test.swift */; };
+		DA867BE61ED82B9000D89E6D /* NIKKAArchiver.m in Sources */ = {isa = PBXBuildFile; fileRef = DA867BC91ED82B9000D89E6D /* NIKKAArchiver.m */; };
+		DA867BE71ED82B9000D89E6D /* SerialAlgorithm.m in Sources */ = {isa = PBXBuildFile; fileRef = DA867BCB1ED82B9000D89E6D /* SerialAlgorithm.m */; };
+		DA867BE81ED82B9000D89E6D /* SGQRCodeScanningVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA867BCF1ED82B9000D89E6D /* SGQRCodeScanningVC.m */; };
+		DA867BE91ED82B9000D89E6D /* QRCodeGenerateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA867BD11ED82B9000D89E6D /* QRCodeGenerateVC.m */; };
+		DA867BEA1ED82B9000D89E6D /* QRCodeScanningVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA867BD31ED82B9000D89E6D /* QRCodeScanningVC.m */; };
+		DA867BEB1ED82B9000D89E6D /* ScanSuccessJumpVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA867BD51ED82B9000D89E6D /* ScanSuccessJumpVC.m */; };
+		DA867BEC1ED82B9000D89E6D /* SGQRCode.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DA867BD61ED82B9000D89E6D /* SGQRCode.bundle */; };
+		DA867BED1ED82B9000D89E6D /* SGQRCodeConst.m in Sources */ = {isa = PBXBuildFile; fileRef = DA867BD91ED82B9000D89E6D /* SGQRCodeConst.m */; };
+		DA867BEE1ED82B9000D89E6D /* SGQRCodeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = DA867BDB1ED82B9000D89E6D /* SGQRCodeTool.m */; };
+		DA867BEF1ED82B9000D89E6D /* SGQRCodeScanningView.m in Sources */ = {isa = PBXBuildFile; fileRef = DA867BDE1ED82B9000D89E6D /* SGQRCodeScanningView.m */; };
+		DA867BF01ED82B9000D89E6D /* InfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DA867BE21ED82B9000D89E6D /* InfoTableViewCell.m */; };
+		DA867BF11ED82B9000D89E6D /* InfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA867BE31ED82B9000D89E6D /* InfoTableViewCell.xib */; };
+		DA867BFD1ED82BA000D89E6D /* NKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA867BF61ED82BA000D89E6D /* NKViewController.m */; };
+		DA867C0A1ED82E4300D89E6D /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA867C031ED82E4300D89E6D /* InfoViewController.m */; };
+		DA867C0B1ED82E4300D89E6D /* OrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA867C061ED82E4300D89E6D /* OrderViewController.m */; };
+		DA867C0C1ED82E4300D89E6D /* OrderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA867C071ED82E4300D89E6D /* OrderViewController.xib */; };
+		DA867C0D1ED82E4300D89E6D /* PayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA867C091ED82E4300D89E6D /* PayViewController.m */; };
+		DAE2AEEF1E7959FB003F8ECB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE2AEEE1E7959FB003F8ECB /* main.m */; };
+		DAE2AEF21E7959FB003F8ECB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE2AEF11E7959FB003F8ECB /* AppDelegate.m */; };
+		DAE2AEFA1E7959FB003F8ECB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAE2AEF91E7959FB003F8ECB /* Assets.xcassets */; };
+		DAE2AEFD1E7959FB003F8ECB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAE2AEFB1E7959FB003F8ECB /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2E295D8A08D7E113D81619B4 /* Pods-NIKKAMaster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NIKKAMaster.release.xcconfig"; path = "Pods/Target Support Files/Pods-NIKKAMaster/Pods-NIKKAMaster.release.xcconfig"; sourceTree = "<group>"; };
+		5155D45344ACB084FEAE1C16 /* Pods_NIKKAMaster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NIKKAMaster.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B97FEEA0E40388BBA4ACEA16 /* Pods-NIKKAMaster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NIKKAMaster.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NIKKAMaster/Pods-NIKKAMaster.debug.xcconfig"; sourceTree = "<group>"; };
+		DA2BA7B91E87C4D600262658 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		DA867BBE1ED810F200D89E6D /* NKAPPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKAPPManager.h; sourceTree = "<group>"; };
+		DA867BBF1ED810F200D89E6D /* NKAPPManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKAPPManager.m; sourceTree = "<group>"; };
+		DA867BC51ED82B9000D89E6D /* Info.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
+		DA867BC61ED82B9000D89E6D /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		DA867BC81ED82B9000D89E6D /* NIKKAArchiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIKKAArchiver.h; sourceTree = "<group>"; };
+		DA867BC91ED82B9000D89E6D /* NIKKAArchiver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIKKAArchiver.m; sourceTree = "<group>"; };
+		DA867BCA1ED82B9000D89E6D /* SerialAlgorithm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SerialAlgorithm.h; sourceTree = "<group>"; };
+		DA867BCB1ED82B9000D89E6D /* SerialAlgorithm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SerialAlgorithm.m; sourceTree = "<group>"; };
+		DA867BCE1ED82B9000D89E6D /* SGQRCodeScanningVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGQRCodeScanningVC.h; sourceTree = "<group>"; };
+		DA867BCF1ED82B9000D89E6D /* SGQRCodeScanningVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGQRCodeScanningVC.m; sourceTree = "<group>"; };
+		DA867BD01ED82B9000D89E6D /* QRCodeGenerateVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeGenerateVC.h; sourceTree = "<group>"; };
+		DA867BD11ED82B9000D89E6D /* QRCodeGenerateVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeGenerateVC.m; sourceTree = "<group>"; };
+		DA867BD21ED82B9000D89E6D /* QRCodeScanningVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeScanningVC.h; sourceTree = "<group>"; };
+		DA867BD31ED82B9000D89E6D /* QRCodeScanningVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeScanningVC.m; sourceTree = "<group>"; };
+		DA867BD41ED82B9000D89E6D /* ScanSuccessJumpVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanSuccessJumpVC.h; sourceTree = "<group>"; };
+		DA867BD51ED82B9000D89E6D /* ScanSuccessJumpVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanSuccessJumpVC.m; sourceTree = "<group>"; };
+		DA867BD61ED82B9000D89E6D /* SGQRCode.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SGQRCode.bundle; sourceTree = "<group>"; };
+		DA867BD71ED82B9000D89E6D /* SGQRCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGQRCode.h; sourceTree = "<group>"; };
+		DA867BD81ED82B9000D89E6D /* SGQRCodeConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGQRCodeConst.h; sourceTree = "<group>"; };
+		DA867BD91ED82B9000D89E6D /* SGQRCodeConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGQRCodeConst.m; sourceTree = "<group>"; };
+		DA867BDA1ED82B9000D89E6D /* SGQRCodeTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGQRCodeTool.h; sourceTree = "<group>"; };
+		DA867BDB1ED82B9000D89E6D /* SGQRCodeTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGQRCodeTool.m; sourceTree = "<group>"; };
+		DA867BDD1ED82B9000D89E6D /* SGQRCodeScanningView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGQRCodeScanningView.h; sourceTree = "<group>"; };
+		DA867BDE1ED82B9000D89E6D /* SGQRCodeScanningView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGQRCodeScanningView.m; sourceTree = "<group>"; };
+		DA867BE11ED82B9000D89E6D /* InfoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoTableViewCell.h; sourceTree = "<group>"; };
+		DA867BE21ED82B9000D89E6D /* InfoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoTableViewCell.m; sourceTree = "<group>"; };
+		DA867BE31ED82B9000D89E6D /* InfoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoTableViewCell.xib; sourceTree = "<group>"; };
+		DA867BF51ED82BA000D89E6D /* NKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKViewController.h; sourceTree = "<group>"; };
+		DA867BF61ED82BA000D89E6D /* NKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKViewController.m; sourceTree = "<group>"; };
+		DA867C021ED82E4300D89E6D /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
+		DA867C031ED82E4300D89E6D /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
+		DA867C051ED82E4300D89E6D /* OrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderViewController.h; sourceTree = "<group>"; };
+		DA867C061ED82E4300D89E6D /* OrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderViewController.m; sourceTree = "<group>"; };
+		DA867C071ED82E4300D89E6D /* OrderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderViewController.xib; sourceTree = "<group>"; };
+		DA867C081ED82E4300D89E6D /* PayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayViewController.h; sourceTree = "<group>"; };
+		DA867C091ED82E4300D89E6D /* PayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PayViewController.m; sourceTree = "<group>"; };
+		DA867C0F1ED82F6700D89E6D /* NIKKAMaster-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NIKKAMaster-Bridging-Header.h"; sourceTree = "<group>"; };
+		DAE2AEEA1E7959FB003F8ECB /* NIKKAMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NIKKAMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAE2AEEE1E7959FB003F8ECB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DAE2AEF01E7959FB003F8ECB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DAE2AEF11E7959FB003F8ECB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DAE2AEF91E7959FB003F8ECB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DAE2AEFC1E7959FB003F8ECB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DAE2AEFE1E7959FB003F8ECB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DAE2AEE71E7959FB003F8ECB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD7DCF785B985F983255F6D8 /* Pods_NIKKAMaster.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		051EA48320F74A01D3007020 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5155D45344ACB084FEAE1C16 /* Pods_NIKKAMaster.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		752D5524B30EBD46F818A8C8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B97FEEA0E40388BBA4ACEA16 /* Pods-NIKKAMaster.debug.xcconfig */,
+				2E295D8A08D7E113D81619B4 /* Pods-NIKKAMaster.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DA867BC41ED82B9000D89E6D /* model */ = {
+			isa = PBXGroup;
+			children = (
+				DA867BC51ED82B9000D89E6D /* Info.swift */,
+				DA867BC61ED82B9000D89E6D /* Test.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		DA867BC71ED82B9000D89E6D /* module */ = {
+			isa = PBXGroup;
+			children = (
+				DA867BC81ED82B9000D89E6D /* NIKKAArchiver.h */,
+				DA867BC91ED82B9000D89E6D /* NIKKAArchiver.m */,
+				DA867BCA1ED82B9000D89E6D /* SerialAlgorithm.h */,
+				DA867BCB1ED82B9000D89E6D /* SerialAlgorithm.m */,
+				DA867BCC1ED82B9000D89E6D /* SGQRCode */,
+			);
+			path = module;
+			sourceTree = "<group>";
+		};
+		DA867BCC1ED82B9000D89E6D /* SGQRCode */ = {
+			isa = PBXGroup;
+			children = (
+				DA867BCD1ED82B9000D89E6D /* Controller */,
+				DA867BD01ED82B9000D89E6D /* QRCodeGenerateVC.h */,
+				DA867BD11ED82B9000D89E6D /* QRCodeGenerateVC.m */,
+				DA867BD21ED82B9000D89E6D /* QRCodeScanningVC.h */,
+				DA867BD31ED82B9000D89E6D /* QRCodeScanningVC.m */,
+				DA867BD41ED82B9000D89E6D /* ScanSuccessJumpVC.h */,
+				DA867BD51ED82B9000D89E6D /* ScanSuccessJumpVC.m */,
+				DA867BD61ED82B9000D89E6D /* SGQRCode.bundle */,
+				DA867BD71ED82B9000D89E6D /* SGQRCode.h */,
+				DA867BD81ED82B9000D89E6D /* SGQRCodeConst.h */,
+				DA867BD91ED82B9000D89E6D /* SGQRCodeConst.m */,
+				DA867BDA1ED82B9000D89E6D /* SGQRCodeTool.h */,
+				DA867BDB1ED82B9000D89E6D /* SGQRCodeTool.m */,
+				DA867BDC1ED82B9000D89E6D /* View */,
+			);
+			path = SGQRCode;
+			sourceTree = "<group>";
+		};
+		DA867BCD1ED82B9000D89E6D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DA867BCE1ED82B9000D89E6D /* SGQRCodeScanningVC.h */,
+				DA867BCF1ED82B9000D89E6D /* SGQRCodeScanningVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DA867BDC1ED82B9000D89E6D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DA867BDD1ED82B9000D89E6D /* SGQRCodeScanningView.h */,
+				DA867BDE1ED82B9000D89E6D /* SGQRCodeScanningView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DA867BE01ED82B9000D89E6D /* view */ = {
+			isa = PBXGroup;
+			children = (
+				DA867BE11ED82B9000D89E6D /* InfoTableViewCell.h */,
+				DA867BE21ED82B9000D89E6D /* InfoTableViewCell.m */,
+				DA867BE31ED82B9000D89E6D /* InfoTableViewCell.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		DA867BF21ED82BA000D89E6D /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				DA867BF51ED82BA000D89E6D /* NKViewController.h */,
+				DA867BF61ED82BA000D89E6D /* NKViewController.m */,
+				DA867C011ED82E4300D89E6D /* info */,
+				DA867C041ED82E4300D89E6D /* pay */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		DA867C011ED82E4300D89E6D /* info */ = {
+			isa = PBXGroup;
+			children = (
+				DA867C021ED82E4300D89E6D /* InfoViewController.h */,
+				DA867C031ED82E4300D89E6D /* InfoViewController.m */,
+			);
+			path = info;
+			sourceTree = "<group>";
+		};
+		DA867C041ED82E4300D89E6D /* pay */ = {
+			isa = PBXGroup;
+			children = (
+				DA867C051ED82E4300D89E6D /* OrderViewController.h */,
+				DA867C061ED82E4300D89E6D /* OrderViewController.m */,
+				DA867C071ED82E4300D89E6D /* OrderViewController.xib */,
+				DA867C081ED82E4300D89E6D /* PayViewController.h */,
+				DA867C091ED82E4300D89E6D /* PayViewController.m */,
+			);
+			path = pay;
+			sourceTree = "<group>";
+		};
+		DA867C0E1ED82F6700D89E6D /* config */ = {
+			isa = PBXGroup;
+			children = (
+				DA867C0F1ED82F6700D89E6D /* NIKKAMaster-Bridging-Header.h */,
+			);
+			path = config;
+			sourceTree = "<group>";
+		};
+		DAE2AEE11E7959FB003F8ECB = {
+			isa = PBXGroup;
+			children = (
+				DAE2AEEC1E7959FB003F8ECB /* NIKKAMaster */,
+				DAE2AEEB1E7959FB003F8ECB /* Products */,
+				752D5524B30EBD46F818A8C8 /* Pods */,
+				051EA48320F74A01D3007020 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DAE2AEEB1E7959FB003F8ECB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DAE2AEEA1E7959FB003F8ECB /* NIKKAMaster.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DAE2AEEC1E7959FB003F8ECB /* NIKKAMaster */ = {
+			isa = PBXGroup;
+			children = (
+				DAE2AEF01E7959FB003F8ECB /* AppDelegate.h */,
+				DAE2AEF11E7959FB003F8ECB /* AppDelegate.m */,
+				DA867BBE1ED810F200D89E6D /* NKAPPManager.h */,
+				DA867BBF1ED810F200D89E6D /* NKAPPManager.m */,
+				DA2BA7B91E87C4D600262658 /* Main.storyboard */,
+				DA867C0E1ED82F6700D89E6D /* config */,
+				DA867BF21ED82BA000D89E6D /* controller */,
+				DA867BC41ED82B9000D89E6D /* model */,
+				DA867BC71ED82B9000D89E6D /* module */,
+				DA867BE01ED82B9000D89E6D /* view */,
+				DAE2AEF91E7959FB003F8ECB /* Assets.xcassets */,
+				DAE2AEFB1E7959FB003F8ECB /* LaunchScreen.storyboard */,
+				DAE2AEFE1E7959FB003F8ECB /* Info.plist */,
+				DAE2AEED1E7959FB003F8ECB /* Supporting Files */,
+			);
+			path = NIKKAMaster;
+			sourceTree = "<group>";
+		};
+		DAE2AEED1E7959FB003F8ECB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DAE2AEEE1E7959FB003F8ECB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DAE2AEE91E7959FB003F8ECB /* NIKKAMaster */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAE2AF011E7959FB003F8ECB /* Build configuration list for PBXNativeTarget "NIKKAMaster" */;
+			buildPhases = (
+				F7F20C4FD9AA11D644A72832 /* [CP] Check Pods Manifest.lock */,
+				DAE2AEE61E7959FB003F8ECB /* Sources */,
+				DAE2AEE71E7959FB003F8ECB /* Frameworks */,
+				DAE2AEE81E7959FB003F8ECB /* Resources */,
+				A58F522677A564A2B1A408FB /* [CP] Embed Pods Frameworks */,
+				97A8A5880FD535B530C5E227 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NIKKAMaster;
+			productName = NIKKAMaster;
+			productReference = DAE2AEEA1E7959FB003F8ECB /* NIKKAMaster.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DAE2AEE21E7959FB003F8ECB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = toby;
+				TargetAttributes = {
+					DAE2AEE91E7959FB003F8ECB = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = FJ8N4S5A53;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = DAE2AEE51E7959FB003F8ECB /* Build configuration list for PBXProject "NIKKAMaster" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DAE2AEE11E7959FB003F8ECB;
+			productRefGroup = DAE2AEEB1E7959FB003F8ECB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DAE2AEE91E7959FB003F8ECB /* NIKKAMaster */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DAE2AEE81E7959FB003F8ECB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA867BF11ED82B9000D89E6D /* InfoTableViewCell.xib in Resources */,
+				DA867C0C1ED82E4300D89E6D /* OrderViewController.xib in Resources */,
+				DA2BA7BA1E87C4D600262658 /* Main.storyboard in Resources */,
+				DAE2AEFD1E7959FB003F8ECB /* LaunchScreen.storyboard in Resources */,
+				DAE2AEFA1E7959FB003F8ECB /* Assets.xcassets in Resources */,
+				DA867BEC1ED82B9000D89E6D /* SGQRCode.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		97A8A5880FD535B530C5E227 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NIKKAMaster/Pods-NIKKAMaster-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A58F522677A564A2B1A408FB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NIKKAMaster/Pods-NIKKAMaster-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7F20C4FD9AA11D644A72832 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DAE2AEE61E7959FB003F8ECB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA867BE61ED82B9000D89E6D /* NIKKAArchiver.m in Sources */,
+				DA867BEF1ED82B9000D89E6D /* SGQRCodeScanningView.m in Sources */,
+				DA867BED1ED82B9000D89E6D /* SGQRCodeConst.m in Sources */,
+				DA867C0A1ED82E4300D89E6D /* InfoViewController.m in Sources */,
+				DA867BE81ED82B9000D89E6D /* SGQRCodeScanningVC.m in Sources */,
+				DA867BEE1ED82B9000D89E6D /* SGQRCodeTool.m in Sources */,
+				DAE2AEF21E7959FB003F8ECB /* AppDelegate.m in Sources */,
+				DA867BE71ED82B9000D89E6D /* SerialAlgorithm.m in Sources */,
+				DA867BE41ED82B9000D89E6D /* Info.swift in Sources */,
+				DA867BFD1ED82BA000D89E6D /* NKViewController.m in Sources */,
+				DA867C0D1ED82E4300D89E6D /* PayViewController.m in Sources */,
+				DA867BE91ED82B9000D89E6D /* QRCodeGenerateVC.m in Sources */,
+				DA867BF01ED82B9000D89E6D /* InfoTableViewCell.m in Sources */,
+				DA867BE51ED82B9000D89E6D /* Test.swift in Sources */,
+				DA867C0B1ED82E4300D89E6D /* OrderViewController.m in Sources */,
+				DA867BEA1ED82B9000D89E6D /* QRCodeScanningVC.m in Sources */,
+				DAE2AEEF1E7959FB003F8ECB /* main.m in Sources */,
+				DA867BEB1ED82B9000D89E6D /* ScanSuccessJumpVC.m in Sources */,
+				DA867BC01ED810F200D89E6D /* NKAPPManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DAE2AEFB1E7959FB003F8ECB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAE2AEFC1E7959FB003F8ECB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DAE2AEFF1E7959FB003F8ECB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DAE2AF001E7959FB003F8ECB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DAE2AF021E7959FB003F8ECB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B97FEEA0E40388BBA4ACEA16 /* Pods-NIKKAMaster.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = FJ8N4S5A53;
+				INFOPLIST_FILE = NIKKAMaster/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.toby.NIKKAMaster;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NIKKAMaster/config/NIKKAMaster-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		DAE2AF031E7959FB003F8ECB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E295D8A08D7E113D81619B4 /* Pods-NIKKAMaster.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = FJ8N4S5A53;
+				INFOPLIST_FILE = NIKKAMaster/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.toby.NIKKAMaster;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NIKKAMaster/config/NIKKAMaster-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DAE2AEE51E7959FB003F8ECB /* Build configuration list for PBXProject "NIKKAMaster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAE2AEFF1E7959FB003F8ECB /* Debug */,
+				DAE2AF001E7959FB003F8ECB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAE2AF011E7959FB003F8ECB /* Build configuration list for PBXNativeTarget "NIKKAMaster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAE2AF021E7959FB003F8ECB /* Debug */,
+				DAE2AF031E7959FB003F8ECB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DAE2AEE21E7959FB003F8ECB /* Project object */;
+}

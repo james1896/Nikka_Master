@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="lBD-qu-a5q">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Zia-I1-9Yq">
+            <objects>
+                <tabBarController id="lBD-qu-a5q" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="7Dg-w2-sZz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="UqW-Em-8fe" kind="relationship" relationship="viewControllers" id="9BH-9H-g2v"/>
+                        <segue destination="mL8-b8-mBe" kind="relationship" relationship="viewControllers" id="4gN-Wd-qPn"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xau-lF-mRb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-634" y="296"/>
+        </scene>
+        <!--查询-->
+        <scene sceneID="RpU-IT-Hqp">
+            <objects>
+                <navigationController id="mL8-b8-mBe" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="查询" id="zkY-AR-XYI"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="OVy-R7-Dqw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="2aM-kA-YTW" kind="relationship" relationship="rootViewController" id="act-1I-MSt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ffb-rd-aDl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="323" y="694"/>
+        </scene>
+        <!--查询-->
+        <scene sceneID="bqd-0x-L9Z">
+            <objects>
+                <viewController id="2aM-kA-YTW" customClass="InfoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ym4-3T-DK4"/>
+                        <viewControllerLayoutGuide type="bottom" id="VBH-3U-ClN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AQB-GD-Wxq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="查询" id="Wkt-qH-OKA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kc3-LR-y43" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1385" y="651"/>
+        </scene>
+        <!--支付-->
+        <scene sceneID="wns-uR-jpV">
+            <objects>
+                <navigationController id="UqW-Em-8fe" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="支付" id="5Xu-mW-ddV"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="iBn-E9-MCX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ONc-PJ-vuG" kind="relationship" relationship="rootViewController" id="vn9-dm-TW4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c2B-7K-i36" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="318" y="-46"/>
+        </scene>
+        <!--支付-->
+        <scene sceneID="YfW-CX-DIH">
+            <objects>
+                <viewController id="ONc-PJ-vuG" customClass="PayViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="O0e-QX-hWT"/>
+                        <viewControllerLayoutGuide type="bottom" id="cpq-MX-bv1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0Mj-Ho-dzr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d8F-Wb-jT8" userLabel="扫描支付">
+                                <rect key="frame" x="0.0" y="358" width="100" height="260"/>
+                                <color key="backgroundColor" red="0.78823529410000004" green="0.68235294120000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="JBs-X7-kyB"/>
+                                    <constraint firstAttribute="height" constant="260" id="yO7-Ag-Tfi"/>
+                                </constraints>
+                                <state key="normal" title="扫描支付">
+                                    <color key="titleColor" red="0.70196078431372544" green="0.31372549019607843" blue="0.63529411764705879" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="scan:" destination="ONc-PJ-vuG" eventType="touchUpInside" id="AJ5-Xk-pLw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qgm-ya-bXA">
+                                <rect key="frame" x="100" y="503" width="80" height="55"/>
+                                <color key="backgroundColor" red="0.78823529411764703" green="0.68235294117647061" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="F9m-Tj-oyE"/>
+                                    <constraint firstAttribute="width" constant="80" id="lsB-k3-Y43"/>
+                                </constraints>
+                                <state key="normal" title="用户名支付">
+                                    <color key="titleColor" red="0.70196078431372544" green="0.31372549019607843" blue="0.63529411764705879" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wb6-zD-7Sh">
+                                <rect key="frame" x="289" y="198" width="70" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Pn9-aH-vr5"/>
+                                    <constraint firstAttribute="width" constant="70" id="oGc-Rw-1Pe"/>
+                                </constraints>
+                                <state key="normal" title="Swift"/>
+                                <connections>
+                                    <action selector="Swiftbutton:" destination="ONc-PJ-vuG" eventType="touchUpInside" id="OGP-nS-bZg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wb6-zD-7Sh" firstAttribute="top" secondItem="O0e-QX-hWT" secondAttribute="bottom" constant="134" id="0fh-iS-62k"/>
+                            <constraint firstItem="Qgm-ya-bXA" firstAttribute="leading" secondItem="d8F-Wb-jT8" secondAttribute="trailing" id="NWK-kc-Buz"/>
+                            <constraint firstItem="cpq-MX-bv1" firstAttribute="top" secondItem="Qgm-ya-bXA" secondAttribute="bottom" constant="60" id="SJO-VO-63o"/>
+                            <constraint firstAttribute="leading" secondItem="d8F-Wb-jT8" secondAttribute="leading" id="SKC-R2-e4J"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wb6-zD-7Sh" secondAttribute="trailing" id="W4Y-tC-cUR"/>
+                            <constraint firstItem="d8F-Wb-jT8" firstAttribute="bottom" secondItem="0Mj-Ho-dzr" secondAttribute="bottom" constant="-49" id="soe-Hn-m7C"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="支付" id="JwA-bf-oYJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Skg-mT-z0j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1359" y="-35"/>
+        </scene>
+    </scenes>
+</document>
