@@ -8,3 +8,5 @@
 
 let SCREEN_HEIGHT = UIScreen.main.bounds.height
 let SCREEN_WIDTH = UIScreen.main.bounds.width
+
+let isPad =  (UIDevice.current.userInterfaceIdiom == .pad)

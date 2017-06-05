@@ -48,10 +48,14 @@ class CharController : NKViewController ,ChartViewDelegate,UICollectionViewDeleg
     
     override func  viewDidLoad() {
         super.viewDidLoad()
-//        self.view.backgroundColor = UIColor.blue
-
         
-        self.chartViewSize = CGSize(width:SCREEN_WIDTH,height:SCREEN_HEIGHT/2)
+        if(isPad){
+         self.chartViewSize = CGSize(width:SCREEN_WIDTH/2-5,height:SCREEN_HEIGHT/3.5)
+        }else{
+         self.chartViewSize = CGSize(width:SCREEN_WIDTH,height:SCREEN_HEIGHT/2)
+        }
+        
+    
         self.chartLables.append("各个时段用户使用APP情况")
         self.chartLables.append("各个时段消费情况")
         self.chartLables.append("每天用户使用人数 (日活)")
@@ -64,25 +68,15 @@ class CharController : NKViewController ,ChartViewDelegate,UICollectionViewDeleg
         //列间距,行间距,偏移
         layout.minimumInteritemSpacing = 10
         layout.minimumLineSpacing = 10
-        layout.sectionInset = UIEdgeInsetsMake(10, 10, 0, 10)
+        layout.sectionInset = UIEdgeInsetsMake(0, 0, 0, 0)
         
        let collectionView = UICollectionView.init(frame:CGRect(x:0, y:64, width:SCREEN_WIDTH, height:SCREEN_HEIGHT - 64 - 49), collectionViewLayout: layout)
         collectionView.delegate = self
         collectionView.dataSource = self;
         //注册一个cell
         collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "HotCell")
-        collectionView.backgroundColor = UIColor.red
+        collectionView.backgroundColor = UIColor.init(red: 47/255.0, green: 98/255.0, blue: 140/255.0, alpha: 1)
         self.view.addSubview(collectionView)
-        
-        
-//        months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
-//        let unitsSold = [20.0, 4.0, 6.0, 3.0, 12.0, 16.0, 4.0, 18.0, 2.0, 4.0, 5.0, 4.0]
-//        setChart(dataPoints: months, values: unitsSold)
-        
-//        createLineChartView()
-//        setChart(dataPoints: months, values: unitsSold, lineChartView: self.linechartView!)
-//        createBarChartView()
-//       setChart(dataPoints: months, values: unitsSold, chartView: self.barChartView!)
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -94,11 +88,6 @@ class CharController : NKViewController ,ChartViewDelegate,UICollectionViewDeleg
         
         srand48(Int(time(nil)))
         cell.backgroundColor = UIColor.init(red:CGFloat(drand48()), green: CGFloat(drand48()), blue: CGFloat(drand48()), alpha: 1)
-//        let unitsSold = [20.0, 0.0, 0.0, 0.0, 0.0, 16.0,
-//                         4.0, 50.0, 2.0, 4.0, 5.0, 4.0,
-//                         20.0, 4.0, 6.0, 3.0, 12.0, 16.0,
-//                         4.0, 18.0, 2.0, 4.0, 5.0, 4.0]
-        
         let lineChartView = createLineChartView(values: self.chartDatas[indexPath.row],lable: self.chartLables[indexPath.row])
         cell.addSubview(lineChartView)
         return cell
