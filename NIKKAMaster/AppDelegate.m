@@ -18,6 +18,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    if (isIPad) {
+        NSLog(@"ipad");
+    }else if([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone){
+        NSLog(@"iphone");
+    }
     return YES;
 }
 
