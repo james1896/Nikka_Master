@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A6EB27591EE292A3009196F6 /* CharController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EB27581EE292A3009196F6 /* CharController.swift */; };
+		A6EB275B1EE298FE009196F6 /* macroCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EB275A1EE298FE009196F6 /* macroCommon.swift */; };
 		BD7DCF785B985F983255F6D8 /* Pods_NIKKAMaster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5155D45344ACB084FEAE1C16 /* Pods_NIKKAMaster.framework */; };
 		DA2BA7BA1E87C4D600262658 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA2BA7B91E87C4D600262658 /* Main.storyboard */; };
 		DA867BC01ED810F200D89E6D /* NKAPPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DA867BBF1ED810F200D89E6D /* NKAPPManager.m */; };
@@ -38,6 +40,10 @@
 /* Begin PBXFileReference section */
 		2E295D8A08D7E113D81619B4 /* Pods-NIKKAMaster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NIKKAMaster.release.xcconfig"; path = "Pods/Target Support Files/Pods-NIKKAMaster/Pods-NIKKAMaster.release.xcconfig"; sourceTree = "<group>"; };
 		5155D45344ACB084FEAE1C16 /* Pods_NIKKAMaster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NIKKAMaster.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6EB27551EE29055009196F6 /* MacroDefinition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacroDefinition.h; sourceTree = "<group>"; };
+		A6EB27561EE290A9009196F6 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		A6EB27581EE292A3009196F6 /* CharController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharController.swift; sourceTree = "<group>"; };
+		A6EB275A1EE298FE009196F6 /* macroCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = macroCommon.swift; sourceTree = "<group>"; };
 		B97FEEA0E40388BBA4ACEA16 /* Pods-NIKKAMaster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NIKKAMaster.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NIKKAMaster/Pods-NIKKAMaster.debug.xcconfig"; sourceTree = "<group>"; };
 		DA2BA7B91E87C4D600262658 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		DA867BBE1ED810F200D89E6D /* NKAPPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKAPPManager.h; sourceTree = "<group>"; };
@@ -115,6 +121,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		A6EB27571EE29288009196F6 /* chart */ = {
+			isa = PBXGroup;
+			children = (
+				A6EB27581EE292A3009196F6 /* CharController.swift */,
+			);
+			path = chart;
+			sourceTree = "<group>";
+		};
 		DA867BC41ED82B9000D89E6D /* model */ = {
 			isa = PBXGroup;
 			children = (
@@ -190,8 +204,9 @@
 			children = (
 				DA867BF51ED82BA000D89E6D /* NKViewController.h */,
 				DA867BF61ED82BA000D89E6D /* NKViewController.m */,
-				DA867C011ED82E4300D89E6D /* info */,
 				DA867C041ED82E4300D89E6D /* pay */,
+				A6EB27571EE29288009196F6 /* chart */,
+				DA867C011ED82E4300D89E6D /* info */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -248,6 +263,8 @@
 			children = (
 				DAE2AEF01E7959FB003F8ECB /* AppDelegate.h */,
 				DAE2AEF11E7959FB003F8ECB /* AppDelegate.m */,
+				A6EB27551EE29055009196F6 /* MacroDefinition.h */,
+				A6EB275A1EE298FE009196F6 /* macroCommon.swift */,
 				DA867BBE1ED810F200D89E6D /* NKAPPManager.h */,
 				DA867BBF1ED810F200D89E6D /* NKAPPManager.m */,
 				DA2BA7B91E87C4D600262658 /* Main.storyboard */,
@@ -260,6 +277,7 @@
 				DAE2AEFB1E7959FB003F8ECB /* LaunchScreen.storyboard */,
 				DAE2AEFE1E7959FB003F8ECB /* Info.plist */,
 				DAE2AEED1E7959FB003F8ECB /* Supporting Files */,
+				A6EB27561EE290A9009196F6 /* PrefixHeader.pch */,
 			);
 			path = NIKKAMaster;
 			sourceTree = "<group>";
@@ -306,7 +324,7 @@
 				TargetAttributes = {
 					DAE2AEE91E7959FB003F8ECB = {
 						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = FJ8N4S5A53;
+						DevelopmentTeam = 4F64Q2U6MC;
 						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
@@ -401,6 +419,7 @@
 			files = (
 				DA867BE61ED82B9000D89E6D /* NIKKAArchiver.m in Sources */,
 				DA867BEF1ED82B9000D89E6D /* SGQRCodeScanningView.m in Sources */,
+				A6EB275B1EE298FE009196F6 /* macroCommon.swift in Sources */,
 				DA867BED1ED82B9000D89E6D /* SGQRCodeConst.m in Sources */,
 				DA867C0A1ED82E4300D89E6D /* InfoViewController.m in Sources */,
 				DA867BE81ED82B9000D89E6D /* SGQRCodeScanningVC.m in Sources */,
@@ -416,6 +435,7 @@
 				DA867C0B1ED82E4300D89E6D /* OrderViewController.m in Sources */,
 				DA867BEA1ED82B9000D89E6D /* QRCodeScanningVC.m in Sources */,
 				DAE2AEEF1E7959FB003F8ECB /* main.m in Sources */,
+				A6EB27591EE292A3009196F6 /* CharController.swift in Sources */,
 				DA867BEB1ED82B9000D89E6D /* ScanSuccessJumpVC.m in Sources */,
 				DA867BC01ED810F200D89E6D /* NKAPPManager.m in Sources */,
 			);
@@ -532,7 +552,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = FJ8N4S5A53;
+				DEVELOPMENT_TEAM = 4F64Q2U6MC;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/NIKKAMaster/PrefixHeader.pch";
 				INFOPLIST_FILE = NIKKAMaster/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -541,6 +562,7 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "NIKKAMaster/config/NIKKAMaster-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -551,7 +573,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = FJ8N4S5A53;
+				DEVELOPMENT_TEAM = 4F64Q2U6MC;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/NIKKAMaster/PrefixHeader.pch";
 				INFOPLIST_FILE = NIKKAMaster/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -559,6 +582,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "NIKKAMaster/config/NIKKAMaster-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
